@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.mdg.view.NoteOverviewContr">
+   <children>
+      <TableView fx:id="notationTable" layoutX="53.0" layoutY="39.0" prefHeight="277.0" prefWidth="248.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="97.0" text="Date" />
+          <TableColumn fx:id="textColumn" prefWidth="149.0" text="Text" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
